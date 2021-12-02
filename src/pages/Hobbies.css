@@ -1,0 +1,53 @@
+.twitter-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1%;
+    margin-left: 75%;
+    margin-top: -2.5rem;
+}
+
+.twitter-container h1{
+    font-size: 40px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+.gallery img{
+    height: 18rem;
+    width: 27rem;
+    padding: 2%;
+    margin-top: 3%;
+    
+}
+
+
+.gallery img:hover{
+    transition: transform .4s;
+    transform: scale(1.2);
+}
+
+.gallery-container h1{
+    font-size: 40px;
+    margin-left: -25%;
+
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .twitter-container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 5%;
+        margin-left: 0%;
+    }
+}

@@ -1,38 +1,91 @@
-.App {
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fwh-slide{
+  height: 100vh;
+  padding: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fwh-slide--bg-home{
+  background-image: url('images/HomeBackground.jpg');
+  background-size: cover;
+  box-sizing: border-box;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fwh-slide--bg-port{
+  background-image: url('images/AboutBackground.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  color: rgb(92, 92, 92);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fwh-slide--bg-exp{
+  background-image: url('images/ExperienceBackground.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  color: white;
+}
+
+.fwh-slide--bg-edu{
+  background: rgb(17, 17, 17);
+  color: white;
+}
+
+.fwh-slide--bg-con{
+  background: rgb(65, 65, 65);
+  color: white;
+  height: 30vh;
+}
+
+.fwh-slide p1 {
+  position: relative;
+  top: 45%;
+  left: 0%;
+  color: rgb(209, 209, 209);
+  font-size: 4rem;;
+}
+
+.fwh-slide p2 {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  color: rgb(170, 170, 170);
+  font-size: 2rem;;
+}
+
+.fwh-slide h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+@media only screen and (max-width: 960px){
+  .fwh-slide--bg-exp{
+    background-image: url('images/ExperienceBackground.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    color: white;
+    height: 200vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .fwh-slide--bg-port{
+    background: linear-gradient(0deg, rgb(121, 165, 167) 0%, rgb(45, 59, 59) 100%);
+    color: rgb(92, 92, 92);
+    height: 200vh;
   }
 }
